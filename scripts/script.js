@@ -12,6 +12,7 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -20,24 +21,84 @@ function startGame() {
   setNextQuestion()
 }
 
+
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+
 function showQuestion(question) {
-  questionElement.innerText = question.question
-  question.answers.forEach(answer => {
-    const button = document.createElement('button')
-    button.innerText = answer.text
-    button.classList.add('btn')
-    if (answer.correct) {
-      button.dataset.correct = answer.correct
-    }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
-  })
+
+  questionElement.innerText = question.Citation
+
+  // Answer button for Macron
+  const buttonMacron = document.createElement('button')
+  buttonMacron.innerText = "Macron"
+  buttonMacron.classList.add('btn')
+  buttonMacron.addEventListener('click', selectAnswer)
+
+  // Answer button for OSS
+  const buttonOSS = document.createElement('button')
+  buttonOSS.innerText = "OSS"
+  buttonOSS.classList.add('btn')
+  buttonOSS.addEventListener('click', selectAnswer)
+
+  // Set correct values depending on answer
+  if (question.Author == "OSS") {
+    buttonOSS.dataset.correct = true
+    buttonMacron.dataset.correct = false
+  } else {
+    buttonOSS.dataset.correct = false
+    buttonMacron.dataset.correct = true
+  }
+
+  answerButtonsElement.appendChild(buttonOSS)
+  answerButtonsElement.appendChild(buttonMacron)
+
 }
+
+
+function selectAnswer(e) {
+
+  const selectedButton = e.target
+  const correct = selectedButton.dataset.correct
+  setStatusClass(document.body, correct)
+
+  Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+  })
+
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
+  }
+
+}
+
+
+function setStatusClass(element, correct) {
+
+  clearStatusClass(element)
+
+  if (correct == "true") {
+    element.classList.add('correct')
+  } else {
+    element.classList.add('wrong')
+  }
+
+}
+
+
+function clearStatusClass(element) {
+
+  element.classList.remove('correct')
+  element.classList.remove('wrong')
+
+}
+
 
 function resetState() {
   clearStatusClass(document.body)
@@ -46,67 +107,3 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
-
-function selectAnswer(e) {
-  const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
-  setStatusClass(document.body, correct)
-  Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
-  })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
-  } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
-  }
-}
-
-function setStatusClass(element, correct) {
-  clearStatusClass(element)
-  if (correct) {
-    element.classList.add('correct')
-  } else {
-    element.classList.add('wrong')
-  }
-}
-
-function clearStatusClass(element) {
-  element.classList.remove('correct')
-  element.classList.remove('wrong')
-}
-
-const questions = [
-  {
-    question: 'What is 2 + 2?',
-    answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
-    ]
-  },
-  {
-    question: 'Who is the best YouTuber?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
-    ]
-  },
-  {
-    question: 'Is web development fun?',
-    answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
-    ]
-  },
-  {
-    question: 'What is 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
-    ]
-  }
-]
