@@ -34,14 +34,16 @@ function showQuestion(question) {
 
   // Answer button for Macron
   const buttonMacron = document.createElement('button')
-  buttonMacron.innerText = "Macron"
+  buttonMacron.innerText = ""
   buttonMacron.classList.add('btn')
+  buttonMacron.classList.add('macron-img')
   buttonMacron.addEventListener('click', selectAnswer)
 
   // Answer button for OSS
   const buttonOSS = document.createElement('button')
-  buttonOSS.innerText = "OSS"
+  buttonOSS.innerText = ""
   buttonOSS.classList.add('btn')
+  buttonOSS.classList.add('oss-img')
   buttonOSS.addEventListener('click', selectAnswer)
 
   // Set correct values depending on answer

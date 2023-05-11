@@ -50,7 +50,7 @@
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 70px 20px;
     color: white;
     outline: none;
   }
@@ -83,3 +83,16 @@
   .hide {
     display: none;
   }
+
+  .macron-img {
+    background-image: url('img/macron_neutral.jpeg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .oss-img {
+    background-image: url('img/oss_neutral.jpeg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

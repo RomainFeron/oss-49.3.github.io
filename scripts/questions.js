@@ -42,6 +42,12 @@ const questions = [
       "Video": ""
     },
     {
+      "Citation": "Je ne suis pas arrogant. Je dis et je fais ce que je veux.",
+      "Author": "EM",
+      "Source": "",
+      "Video": "https://www.youtube.com/watch?v=A2OYiyQ7eLw"
+    },
+    {
       "Citation": "Une gare c'est un lieu où on croise les gens qui réussissent et les gens qui ne sont rien.",
       "Author": "EM",
       "Source": "",
