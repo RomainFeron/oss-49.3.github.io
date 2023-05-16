@@ -3,6 +3,7 @@
 <html lang="en">
 
   <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,6 +11,10 @@
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/questions.js"></script>
     <title>OSS 49.3</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.cdnfonts.com/css/true-crimes" rel="stylesheet">
+
   </head>
 
   <body>
@@ -27,16 +32,23 @@
 
       <div class="controls">
         <button id="start-btn" class="start-btn btn">
-          Exercice facile, trouve si la réplique provient d'Emmanuel Macron ou d'OSS 117.<br>
+          Travailleur, trouve si la réplique provient d'Emmanuel Macron ou d'OSS 117.<br>
           <b>C'est parti?</b> 
       </button>
         <button id="next-btn" class="next-btn btn hide">Suivant</button>
       </div>
 
-      <a href="" id="source-container" class="center hide" target=”_blank”>
-        Source
-      </a>
+      <div class="flush-left">
+        <a href="" id="source-container" class="center hide" target=”_blank”>
+          Source
+        </a>
+      </div>
       
+      <div id="points-counter" class="flush-right hide">
+        <span id="current-questions">x</span> / 
+        <span id="total-questions">1</span>. 
+        Points: <span id="correct-questions">0</span>
+      </div>
     </div>
 
   </body>

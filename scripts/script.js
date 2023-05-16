@@ -4,7 +4,11 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const sourceContainer = document.getElementById('source-container')
-
+const totalQContainer = document.getElementById('total-questions')
+const currentQContainer = document.getElementById('current-questions')
+const correctQContainer = document.getElementById('correct-questions')
+const pointsCounterContainer = document.getElementById('points-counter')
+var correctQuestions = 0
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -19,7 +23,12 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
+  totalQuestions = 0, correctQuestions = 0
+  totalQContainer.innerText = questions.length
+  currentQContainer.innerText = 1
+  correctQContainer.innerText = 0
   setNextQuestion()
+  pointsCounterContainer.classList.remove("hide")
 }
 
 
@@ -31,7 +40,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   sourceContainer.setAttribute("href", question.Source);
-  questionElement.innerText = question.Citation
+  questionElement.innerHTML = question.Citation
 
   // Answer button for Macron
   const buttonMacron = document.createElement('button')
@@ -66,7 +75,6 @@ function selectAnswer(e) {
 
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
-  setStatusClass(document.body, correct)
 
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
@@ -78,6 +86,13 @@ function selectAnswer(e) {
     startButton.innerText = 'Restart'
     startButton.classList.remove('hide')
   }
+
+  if (correct == "true") {
+    correctQuestions += 1
+  }
+
+  currentQContainer.innerText = currentQuestionIndex
+  correctQContainer.innerText = correctQuestions
 
 }
 
