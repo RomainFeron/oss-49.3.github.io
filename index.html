@@ -18,41 +18,62 @@
   </head>
 
   <body>
-    <div class="container">
+    
+    <div id="intro-div" class="center font">
 
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
+        <div class="main-text"><center>Startup Nation, <br> au travail!</center></div>
+    
+        <div class="carousel">
+          <img src="css/img/carousel/1.jpg" class="carousel-image" style="display: block;">
+          <img src="css/img/carousel/2.jpg" class="carousel-image" style="display: none;">
+          <img src="css/img/carousel/3.jpg" class="carousel-image" style="display: none;">
+          <img src="css/img/carousel/4.jpg" class="carousel-image" style="display: none;">
+          <img src="css/img/carousel/5.jpg" class="carousel-image" style="display: none;">
+          <img src="css/img/carousel/6.jpg" class="carousel-image" style="display: none;">
+          <img src="css/img/carousel/7.jpg" class="carousel-image" style="display: none;">
+        </div>
+    
+        <script type="text/javascript" src="scripts/carousel.js"></script>
+
+        <button class="btn center font" id="btn-start"> Commencer </btn>
+    
+    </div>
+
+
+    <div id="main-container" class=" hide">
+      <div id="question" class="font"></div>
+      <div id="question-container" class="container hide">
         <div id="answer-buttons" class="btn-grid btn-grid-2 center">
           <button class="btn oss-img" value="OSS" id="btn-oss">
           </button>
           <button class="btn macron-img" value="Macron" id="btn-macron">
           </button>
         </div>
-      </div>
-      <div class="center">
-        <span id="span-true" class="hide">Vrai</span>
-        <span id="span-false" class="hide">T'es mauvais Jack!</span>
+        <div class="center">
+          <span id="span-true" class="hide font">Vive la France!</span>
+          <span id="span-false" class="hide font">T'es mauvais Jack!</span>
+        </div>
+  
+        <div class="controls">
+          <button id="next-btn" class="next-btn btn hide font">Suivant</button>
+        </div>
+        
+        <div>
+          <div class="flush-left">
+            <a href="" id="source-container" class="center hide font" target=”_blank”>
+              Source
+            </a>
+          </div>
+          
+          <div id="points-counter" class="flush-right hide font">
+            <span id="current-questions" class="font">x</span> / 
+            <span id="total-questions" class="font" >1</span>. 
+            Points: <span id="correct-questions" class="font">0</span>
+          </div>
+        </div>
+
       </div>
 
-      <div class="controls">
-        <button id="start-btn" class="start-btn btn">
-          Travailleur, trouve si la réplique provient d'Emmanuel Macron ou d'OSS 117.<br>
-          <b>C'est parti?</b> 
-        </button>
-        <button id="next-btn" class="next-btn btn hide">Suivant</button>
-      </div>
-
-      <div class="flush-left">
-        <a href="" id="source-container" class="center hide" target=”_blank”>
-          Source
-        </a>
-      </div>
-      
-      <div id="points-counter" class="flush-right hide">
-        <span id="current-questions">x</span> / 
-        <span id="total-questions">1</span>. 
-        Points: <span id="correct-questions">0</span>
-      </div>
     </div>
 
   </body>

@@ -162,7 +162,13 @@ const questions = [
       "Video": "https://www.youtube.com/shorts/Jr4jD28TY-I"
     },
     {
-      "Citation": "Ce qui est ici possible est lié à une culture, un peuple marqué par son histoire et ce peuple luthérien qui a vécu les transformations des dernières décennies, n'est pas exactement le Gaulois réfractaire au changement mais… encore que... nous avons tous quelque chose en commun, cette part d'Européen qui nous unit.",
+      "Citation": "Ce qui est ici possible est lié à une culture, un peuple marqué par son histoire et ce peuple luthérien qui a vécu les transformations des dernières décennies, n'est pas exactement le Gaulois réfractaire au changement",
+      "Author": "EM",
+      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
+      "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
+    },
+    {
+      "Citation": "nous avons tous quelque chose en commun, cette part d'Européen qui nous unit.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
       "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
@@ -222,7 +228,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV"
     },
     {
-      "Citation": "hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail]! Ils veulent simplement des gens qui sont prêts à travailler, avec les contraintes du métier",
+      "Citation": "hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail]! Ils veulent simplement des gens qui sont prêts à travailler",
       "Author": "EM",
       "Source": "https://fr.wikipedia.org/wiki/Je_traverse_la_rue_et_je_vous_trouve_un_travail",
       "Video": ""
@@ -282,7 +288,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
-      "Citation": "Pour revenir à ce que vous disiez sur la situation en Egypte: développement, modernité,… Moi je veux bien, mais enfin, si y avait pas les Occidentaux…",
+      "Citation": "développement, modernité,… Moi je veux bien, mais enfin, si y avait pas les Occidentaux…",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"

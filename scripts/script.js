@@ -1,7 +1,9 @@
+const startButton = document.getElementById('btn-start')
 const buttonMacron = document.getElementById('btn-macron')
 const buttonOSS = document.getElementById('btn-oss')
-const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
+const introDivElement = document.getElementById('intro-div')
+const mainContainerElement = document.getElementById('main-container')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -22,7 +24,30 @@ nextButton.addEventListener('click', () => {
 })
 
 
+const accents = [
+  /[\300-\306]/g, /[\340-\346]/g, // A, a
+  /[\310-\313]/g, /[\350-\353]/g, // E, e
+  /[\314-\317]/g, /[\354-\357]/g, // I, i
+  /[\322-\330]/g, /[\362-\370]/g, // O, o
+  /[\331-\334]/g, /[\371-\374]/g, // U, u
+  /[\321]/g, /[\361]/g, // N, n
+  /[\307]/g, /[\347]/g // C, c
+];
+
+const accentsOut = [
+  'A', 'a',
+  'E', 'e',
+  'I', 'i',
+  'O', 'o',
+  'U', 'u',
+  'N', 'n',
+  'C', 'c'
+];
+
+
 function startGame() {
+  introDivElement.classList.add("hide")
+  mainContainerElement.classList.remove("hide")
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
@@ -45,6 +70,9 @@ function showQuestion(question) {
   answerButtonsElement.classList.remove("btn-grid-1")
   answerButtonsElement.classList.add("btn-grid-2")
   sourceContainer.setAttribute("href", question.Source);
+  for (let i = 0; i < accents.length; i++) {
+    question.Citation = question.Citation.replace(accents[i], accentsOut[i]);
+  }
   questionElement.innerHTML = question.Citation
 
   // Answer button for Macron
