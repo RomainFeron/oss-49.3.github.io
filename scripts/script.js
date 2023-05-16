@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const sourceContainer = document.getElementById('source-container')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -29,7 +30,7 @@ function setNextQuestion() {
 
 
 function showQuestion(question) {
-
+  sourceContainer.setAttribute("href", question.Source);
   questionElement.innerText = question.Citation
 
   // Answer button for Macron
@@ -90,7 +91,7 @@ function setStatusClass(element, correct) {
   } else {
     element.classList.add('wrong')
   }
-
+  sourceContainer.classList.remove('hide')
 }
 
 
@@ -98,7 +99,7 @@ function clearStatusClass(element) {
 
   element.classList.remove('correct')
   element.classList.remove('wrong')
-
+  sourceContainer.classList.add('hide')
 }
 
 

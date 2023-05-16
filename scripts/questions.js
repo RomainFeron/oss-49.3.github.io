@@ -14,25 +14,25 @@ const questions = [
     {
       "Citation": "(à un président africain:) Depuis 1994, c'est pas la faute de la France, pardon de le dire dans des termes aussi crus. Vous n'avez pas été capables de restaurer votre souveraineté. Ni militaire, ni sécuritaire, ni administrative, de votre pays, c'est aussi une réalité. Faut pas chercher des coupables à l'extérieur.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=hbYrU2SldeM",
       "Video": "https://www.youtube.com/watch?v=hbYrU2SldeM"
     },
     {
       "Citation": "Mais vous m'avez parlé comme si j'étais le président du Burkina Faso. Quelque part vous me parlez, comme si j'étais toujours une puissance coloniale. Mais moi, je ne veux pas m'occuper d'électricité dans les universités au Burkina Faso. (reprend hilare) C'est le travail du président [du Burkina Faso]... (Le président Du Burkina Faso s'en va) Du coup, il s'en va... Reste là! Du coup, il est parti réparer la climatisation.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=ziqdRQrTmmY",
       "Video": "https://www.youtube.com/watch?v=ziqdRQrTmmY"
     },
     {
       "Citation": "On s'ra pas tout le temps là, on s'ra pas tout le temps là.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
       "Citation": "S'ils veulent un responsable, il est devant vous, qu'ils viennent le chercher.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=_e0XFhEmiS4",
       "Video": "https://www.youtube.com/watch?v=_e0XFhEmiS4"
     },
     {
@@ -44,73 +44,73 @@ const questions = [
     {
       "Citation": "Je ne suis pas arrogant. Je dis et je fais ce que je veux.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=A2OYiyQ7eLw",
       "Video": "https://www.youtube.com/watch?v=A2OYiyQ7eLw"
     },
     {
       "Citation": "Une gare c'est un lieu où on croise les gens qui réussissent et les gens qui ne sont rien.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=z83hJ2LA3NI",
       "Video": "https://www.youtube.com/watch?v=z83hJ2LA3NI"
     },
     {
       "Citation": "C'est le vrai monde dehors. Et le vrai monde, il va chez le coiffeur.",
       "Author": "OSS",
-      "Source": "",
-      "Video": ""
+      "Source": "https://www.youtube.com/watch?v=a2LnIv8lpxM",
+      "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM"
     },
     {
       "Citation": "La politique sociale regardez: on met un pognon de dingues dans les minima sociaux, les gens ils sont quand même pauvres.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=z83hJ2LA3NI",
       "Video": "https://www.youtube.com/watch?v=z83hJ2LA3NI"
     },
     {
       "Citation": "Le problème avec l'arabe, c'est que ce n'est pas facilement lisible, même au niveau du son hein… mais enfin c'est joli, c'est joli quand même.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "C'est quand même bien mieux une voiture propre non?",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Il s'agirait de grandir, il s'agirait de grandir.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Le général de Gaulle n'a-t-il pas dit que toute la France était résistante?",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Tous les allemands ne sont pas nazis. - Oui, j'ai déjà entendu cette théorie.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Vous savez les hommes sont rarement des mères de famille.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Attendez, attendez, c'est lesquels les Chinois qui étaient alliés aux nazis?",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
       "Citation": "Si nous avons affaire à des Chinois de Chine, ça ne marche plus.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
@@ -122,13 +122,13 @@ const questions = [
     {
       "Citation": "Changer le monde, changer le monde, vous êtes bien sympathiques mais… faudrait déjà vous lever le matin.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s",
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s"
     },
     {
       "Citation": "Je sais pas si vous êtes au courant mais le monde, il bouge, et il bouge vite, et vous n'allez pas tarder à rester sur le carreau, moi j'vous l'dis hein.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s",
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s"
     },
     {
@@ -140,32 +140,32 @@ const questions = [
     {
       "Citation": "C'est pas les casseroles qui feront avancer la France.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/shorts/Jr4jD28TY-I",
       "Video": "https://www.youtube.com/shorts/Jr4jD28TY-I"
     },
     {
       "Citation": "Ce qui est ici possible est lié à une culture, un peuple marqué par son histoire et ce peuple luthérien qui a vécu les transformations des dernières décennies, n'est pas exactement le Gaulois réfractaire au changement mais… encore que... nous avons tous quelque chose en commun, cette part d'Européen qui nous unit.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
       "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
     },
     {
       "Citation": "Je ne cèderai rien, ni aux fainéants, ni aux cyniques, ni aux extrêmes, et je vous demande d'avoir chaque jour la même détermination.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
       "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
     },
     {
       "Citation": "Les Françaises et les Français détestent les réformes.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
       "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
     },
     {
-      "Citation": "Ca m'en touche une sans bouger l'autre.",
+      "Citation": "ça m'en touche une sans bouger l'autre.",
       "Author": "EM",
-      "Source": "",
-      "Video": "https://twitter.com/BFMTV/status/1547080446869209088?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1547080446869209088%7Ctwgr%5E907b230b554580a712df442457c74d4b9391ec17%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.breakflip-awe.com%2Fpeople%2Factualites%2Fphrase-de-macron-quelles-ont-ete-ses-meilleures-citations-et-punchlines-13400"
+      "Source": "https://twitter.com/BFMTV/status/1547080446869209088",
+      "Video": "https://twitter.com/BFMTV/status/1547080446869209088"
     },
     {
       "Citation": "Il y a dans cette société une majorité de femmes, il y en a qui sont, pour beaucoup, illettrées.",
@@ -176,25 +176,25 @@ const questions = [
     {
       "Citation": "L'argent que j'ai gagné dans ma vie, je l'ai gagné.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=YtA5IiNsS_k&ab_channel=RidiculeTV",
       "Video": "https://www.youtube.com/watch?v=YtA5IiNsS_k&ab_channel=RidiculeTV"
     },
     {
       "Citation": "C'est très important de s'aimer, et c'est très important de se respecter.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=YtA5IiNsS_k&ab_channel=RidiculeTV",
       "Video": "https://www.youtube.com/watch?v=YtA5IiNsS_k&ab_channel=RidiculeTV"
     },
     {
       "Citation": "L'argent ne se mange pas. Il ne se mange pas, je confirme. Il ne se respire pas. Il ne s'aime pas, ou alors on devient très dangereux.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV",
       "Video": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV"
     },
     {
       "Citation": "Parce que nous sommes des enracinés, il y a des arbres à côté de nous, il y a des rivières, il y a des poissons, il y a des frères et des sœurs. Et c'est ce commun notre trésor.",
       "Author": "EM",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV",
       "Video": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV"
     },
     {
@@ -254,22 +254,19 @@ const questions = [
     {
       "Citation": "De toute façon, quand y en a pour un, y en a pour deux non?",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
       "Citation": "Pour revenir à ce que vous disiez sur la situation en Egypte: développement, modernité,… Moi je veux bien, mais enfin, si y avait pas les Occidentaux…",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
       "Citation": "On a jamais les bons papiers. Faut toujours revenir. Quand on revient, ils sont plus là. Où ils sont? Ça j'en sais rien. Hein? A la sieste ou à la prière ou partis manger des boulettes j'en sais rien, mais, c'est pas clair.",
       "Author": "OSS",
-      "Source": "",
+      "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
-    {
-      "Citation": ""
-    }
   ]
