@@ -6,19 +6,25 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
     },
     {
-      "Citation": "Le jour où tu veux faire la révolution, tu apprends d'abord à avoir un diplôme et à te nourrir toi-même, d'accord? Et à ce moment-là tu iras donner des leçons aux autres",
+      "Citation": "Le jour où tu veux faire la révolution, tu apprends d'abord à avoir un diplôme et à te nourrir toi-même, d'accord? Et à ce moment-là tu iras donner des leçons aux autres.",
       "Author": "EM",
       "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
     },
     {
-      "Citation": "(à un président africain:) Depuis 1994, c'est pas la faute de la France, pardon de le dire dans des termes aussi crus. Vous n'avez pas été capables de restaurer votre souveraineté. Ni militaire, ni sécuritaire, ni administrative, de votre pays, c'est aussi une réalité. Faut pas chercher des coupables à l'extérieur.",
+      "Citation": "c'est pas la faute de la France, pardon de le dire dans des termes aussi crus. Vous n'avez pas été capables de restaurer votre souveraineté. Ni militaire, ni sécuritaire, ni administrative, de votre pays, c'est aussi une réalité. Faut pas chercher des coupables à l'extérieur.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=hbYrU2SldeM",
       "Video": "https://www.youtube.com/watch?v=hbYrU2SldeM"
     },
     {
-      "Citation": "Mais vous m'avez parlé comme si j'étais le président du Burkina Faso. Quelque part vous me parlez, comme si j'étais toujours une puissance coloniale. Mais moi, je ne veux pas m'occuper d'électricité dans les universités au Burkina Faso. (reprend hilare) C'est le travail du président [du Burkina Faso]... (Le président Du Burkina Faso s'en va) Du coup, il s'en va... Reste là! Du coup, il est parti réparer la climatisation.",
+      "Citation": "-Je ne bois pas d'alcool.<br>Quelle drôle d'idée! Quelle religion peut être assez stupide pour priver ses fidèles d'un tel plaisir?<br>-La religion musulmane. [...]<br>-Ah j'ignorais.",
+      "Author": "OSS",
+      "Source": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E",
+      "Video": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E"
+    },
+    {
+      "Citation": "Quelque part vous me parlez, comme si j'étais toujours une puissance coloniale. Mais moi, je ne veux pas m'occuper d'électricité dans les universités au Burkina Faso. C'est le travail du président... Du coup, il s'en va... Reste là! Du coup, il est parti réparer la climatisation.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=ziqdRQrTmmY",
       "Video": "https://www.youtube.com/watch?v=ziqdRQrTmmY"
@@ -90,7 +96,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
-      "Citation": "Tous les allemands ne sont pas nazis. - Oui, j'ai déjà entendu cette théorie.",
+      "Citation": "-Tous les allemands ne sont pas nazis.<br>-Oui, j'ai déjà entendu cette théorie.",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
@@ -126,6 +132,18 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s"
     },
     {
+      "Citation": "Il est complètement crétin c'gamin!",
+      "Author": "OSS",
+      "Source": "https://www.youtube.com/watch?v=VpbhmR171N0",
+      "Video": "https://www.youtube.com/watch?v=VpbhmR171N0"
+    },
+    {
+      "Citation": "Changer le monde?! Quelle drôle d'idée! Il est très bien comme ça le monde, pourquoi le changer?",
+      "Author": "OSS",
+      "Source": "https://www.youtube.com/watch?v=3uvMwT69WsY",
+      "Video": "https://www.youtube.com/watch?v=3uvMwT69WsY"
+    },
+    {
       "Citation": "Je sais pas si vous êtes au courant mais le monde, il bouge, et il bouge vite, et vous n'allez pas tarder à rester sur le carreau, moi j'vous l'dis hein.",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s",
@@ -158,8 +176,14 @@ const questions = [
     {
       "Citation": "Les Françaises et les Français détestent les réformes.",
       "Author": "EM",
-      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
-      "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
+      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg",
+      "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg"
+    },
+    {
+      "Citation": "Mais enfin c'est absurde. Tout le monde rêve d'être français, à commencer par vous.",
+      "Author": "OSS",
+      "Source": "https://www.youtube.com/watch?v=JxTJYscKNKg",
+      "Video": "https://www.youtube.com/watch?v=JxTJYscKNKg"
     },
     {
       "Citation": "ça m'en touche une sans bouger l'autre.",
@@ -204,7 +228,7 @@ const questions = [
       "Video": ""
     },
     {
-      "Citation": "n'êtes-vous pas le meilleur ? - Je vous répondrais « Oui », ce serait de la prétention ; je vous répondrais « Non », ce serait de la bêtise. ",
+      "Citation": "-N'êtes-vous pas le meilleur ? <br>-Je vous répondrais « oui », ce serait de la prétention ; je vous répondrais « non », ce serait de la bêtise. ",
       "Author": "OSS",
       "Source": "https://fr.wikiquote.org/wiki/OSS_117_:_Alerte_rouge_en_Afrique_noire",
       "Video": ""

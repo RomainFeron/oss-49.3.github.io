@@ -30,7 +30,6 @@
   }
   
   .container {
-    width: 800px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
@@ -40,9 +39,16 @@
   
   .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin: 20px 0;
+    margin-top: 20px;
+  } 
+
+  .btn-grid-1 {
+    grid-template-columns: repeat(1, auto);
+  } 
+
+  .btn-grid-2 {
+    grid-template-columns: repeat(2, auto);
   }
   
   .btn {
@@ -89,6 +95,18 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .macron-yes {
+    background-image: url('img/macron_yes.jpeg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .macron-no {
+    background-image: url('img/macron_no.jpeg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
   .oss-img {
     background-image: url('img/oss_neutral.jpeg') !important;
@@ -96,14 +114,14 @@
     background-size: cover;
   }
   
-  .macron-img {
-    background-image: url('img/macron_neutral.jpeg') !important;
+  .oss-yes {
+    background-image: url('img/oss_yes.jpeg') !important;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  .oss-img {
-    background-image: url('img/oss_neutral.jpeg') !important;
+
+  .oss-no {
+    background-image: url('img/oss_no.jpeg') !important;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -111,6 +129,7 @@
   .center {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .flush-left {

@@ -1,3 +1,5 @@
+const buttonMacron = document.getElementById('btn-macron')
+const buttonOSS = document.getElementById('btn-oss')
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -8,6 +10,8 @@ const totalQContainer = document.getElementById('total-questions')
 const currentQContainer = document.getElementById('current-questions')
 const correctQContainer = document.getElementById('correct-questions')
 const pointsCounterContainer = document.getElementById('points-counter')
+const spanTrue = document.getElementById('span-true')
+const spanFalse = document.getElementById('span-false')
 var correctQuestions = 0
 let shuffledQuestions, currentQuestionIndex
 
@@ -26,7 +30,6 @@ function startGame() {
   totalQuestions = 0, correctQuestions = 0
   totalQContainer.innerText = questions.length
   currentQContainer.innerText = 1
-  correctQContainer.innerText = 0
   setNextQuestion()
   pointsCounterContainer.classList.remove("hide")
 }
@@ -39,21 +42,15 @@ function setNextQuestion() {
 
 
 function showQuestion(question) {
+  answerButtonsElement.classList.remove("btn-grid-1")
+  answerButtonsElement.classList.add("btn-grid-2")
   sourceContainer.setAttribute("href", question.Source);
   questionElement.innerHTML = question.Citation
 
   // Answer button for Macron
-  const buttonMacron = document.createElement('button')
-  buttonMacron.innerText = ""
-  buttonMacron.classList.add('btn')
-  buttonMacron.classList.add('macron-img')
   buttonMacron.addEventListener('click', selectAnswer)
 
   // Answer button for OSS
-  const buttonOSS = document.createElement('button')
-  buttonOSS.innerText = ""
-  buttonOSS.classList.add('btn')
-  buttonOSS.classList.add('oss-img')
   buttonOSS.addEventListener('click', selectAnswer)
 
   // Set correct values depending on answer
@@ -64,15 +61,17 @@ function showQuestion(question) {
     buttonOSS.dataset.correct = false
     buttonMacron.dataset.correct = true
   }
-
   answerButtonsElement.appendChild(buttonOSS)
   answerButtonsElement.appendChild(buttonMacron)
-
+  currentQContainer.innerText = currentQuestionIndex + 1
+  spanFalse.classList.add("hide")
+  spanTrue.classList.add("hide")
 }
 
 
 function selectAnswer(e) {
-
+  answerButtonsElement.classList.remove("btn-grid-2")
+  answerButtonsElement.classList.add("btn-grid-1")
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
 
@@ -87,12 +86,34 @@ function selectAnswer(e) {
     startButton.classList.remove('hide')
   }
 
+  buttonMacron.classList.add("hide")
+  buttonOSS.classList.add("hide")
+  selectedButton.classList.remove("hide")
+  
   if (correct == "true") {
+    spanTrue.classList.remove("hide")
     correctQuestions += 1
+    if (selectedButton.value == "Macron") {
+      selectedButton.classList.remove("macron-img")
+      selectedButton.classList.add("macron-yes")
+    } else {
+      selectedButton.classList.remove("oss-img")
+      selectedButton.classList.add("oss-yes")
+    }
+  } else {
+    spanFalse.classList.remove("hide")
+    if (selectedButton.value == "Macron") {
+      selectedButton.classList.remove("macron-img")
+      selectedButton.classList.add("macron-no")
+    } else {
+      selectedButton.classList.remove("oss-img")
+      selectedButton.classList.add("oss-no")
+    }
   }
 
-  currentQContainer.innerText = currentQuestionIndex
   correctQContainer.innerText = correctQuestions
+
+  selectedButton.removeEventListener('click', selectAnswer)
 
 }
 
@@ -124,4 +145,12 @@ function resetState() {
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
+  buttonMacron.classList.remove("hide")
+  buttonMacron.classList.remove("macron-yes")
+  buttonMacron.classList.remove("macron-no")
+  buttonMacron.classList.add("macron-img")
+  buttonOSS.classList.remove("hide")
+  buttonOSS.classList.remove("oss-yes")
+  buttonOSS.classList.remove("oss-no")
+  buttonOSS.classList.add("oss-img")
 }
