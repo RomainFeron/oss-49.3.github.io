@@ -1,6 +1,12 @@
 const questions = [
     {
-      "Citation": "Tu es là, dans une cérémonie officielle, tu te comportes comme il faut. Donc tu peux faire l'imbécile, mais aujourd'hui c'est la Marseillaise, [...] donc tu m'appelles […] “Monsieur”. D'accord? Voilà",
+      "Citation": "Non, non, tu es là dans une cérémonie officielle. Tu te comportes comme il faut",
+      "Author": "EM",
+      "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
+      "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
+    },
+    {
+      "Citation": "Tu peux faire l'imbécile, mais aujourd'hui, c'est la 'Marseillaise' et le 'Chant des Partisans'",
       "Author": "EM",
       "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
@@ -24,19 +30,13 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=hbYrU2SldeM"
     },
     {
-      "Citation": "-Je ne bois pas d'alcool.<br>Quelle drôle d'idée! Quelle religion peut être assez stupide pour priver ses fidèles d'un tel plaisir?<br>-La religion musulmane. [...]<br>-Ah j'ignorais.",
+      "Citation": "-Je ne bois pas d'alcool.<br>Quelle drôle d'idée! Quelle religion peut être assez stupide pour priver ses fidèles d'un tel plaisir?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E",
       "Video": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E"
     },
     {
       "Citation": "Quelque part vous me parlez, comme si j'étais toujours une puissance coloniale. Mais moi, je ne veux pas m'occuper d'électricité dans les universités au Burkina Faso.",
-      "Author": "EM",
-      "Source": "https://www.youtube.com/watch?v=ziqdRQrTmmY",
-      "Video": "https://www.youtube.com/watch?v=ziqdRQrTmmY"
-    },
-    {
-      "Citation": "C'est le travail du président... Du coup, il s'en va... Reste là! Du coup, il est parti réparer la climatisation.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=ziqdRQrTmmY",
       "Video": "https://www.youtube.com/watch?v=ziqdRQrTmmY"
@@ -78,7 +78,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM"
     },
     {
-      "Citation": "La politique sociale regardez: on met un pognon de dingues dans les minima sociaux, les gens ils sont quand même pauvres.",
+      "Citation": "on met un pognon de dingues dans les minima sociaux, les gens ils sont quand même pauvres.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=z83hJ2LA3NI",
       "Video": "https://www.youtube.com/watch?v=z83hJ2LA3NI"
