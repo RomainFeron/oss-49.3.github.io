@@ -34,16 +34,20 @@
         </div>
     
         <script type="text/javascript" src="scripts/carousel.js"></script>
-
-        <button class="btn center font" id="btn-start"> Commencer </btn>
+        
+        <div>
+          <p class="font font-white center">OSS 117 ou Emmanuel Macron, saurez-vous deviner qui est l'auteur de ces citations?</p>
+          <button class="next-btn center font" id="btn-start"> Commencer </btn>
+        </div>
+        
     
     </div>
 
 
-    <div id="main-container" class=" hide">
+    <div id="main-container" class="hide center">
       <div id="question" class="font"></div>
-      <div id="question-container" class="container hide">
-        <div id="answer-buttons" class="btn-grid btn-grid-2 center">
+      <div id="question-container" class="container hide center clearfix">
+        <div id="answer-buttons" class="btn-grid btn-grid-2">
           <button class="btn oss-img" value="OSS" id="btn-oss">
           </button>
           <button class="btn macron-img" value="Macron" id="btn-macron">
@@ -55,23 +59,21 @@
         </div>
   
         <div class="controls">
-          <button id="next-btn" class="next-btn btn hide font">Suivant</button>
-        </div>
-        
-        <div>
-          <div class="flush-left">
-            <a href="" id="source-container" class="center hide font" target=”_blank”>
-              Source
-            </a>
-          </div>
-          
-          <div id="points-counter" class="flush-right hide font">
-            <span id="current-questions" class="font">x</span> / 
-            <span id="total-questions" class="font" >1</span>. 
-            Points: <span id="correct-questions" class="font">0</span>
-          </div>
+          <button id="next-btn" class="next-btn hide font">Suivant</button>
         </div>
 
+        <span id="points-counter" class="flush-right hide font">
+          <span id="current-questions" class="font">x</span> / 
+          <span id="total-questions" class="font" >1</span>. 
+          Points: <span id="correct-questions" class="font">0</span>
+        </span>
+
+        <span class="flush-left">
+          <a href="" id="source-container" class="hide font top-align" target=”_blank”>
+            Source
+          </a>
+        </span>
+        
       </div>
 
     </div>
