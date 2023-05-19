@@ -48,7 +48,6 @@ const accentsOut = [
 function startGame() {
   introDivElement.classList.add("hide")
   mainContainerElement.classList.remove("hide")
-  startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
