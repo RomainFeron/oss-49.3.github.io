@@ -1,22 +1,30 @@
 @font-face {
-  font-family: 'True Crimes';
-  font-style: sans-serif;
-  src: url("css/true_crimes_2/crimesu-23.otf") format("opentype");
+  font-family: 'True Crimes Expanded';
+  src: url('fonts/true-crimes.eot');
+  src: url('fonts/true-crimes.eot?#iefix') format('embedded-opentype'),
+      url('fonts/true-crimes.woff2') format('woff2'),
+      url('fonts/true-crimes.otf') format('opentype'),
+      url('fonts/true-crimes.woff') format('woff'),
+      url('fonts/true-crimes.ttf') format('truetype'),
+      url('fonts/true-crimes.svg#true-crimes') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 html {
-  font-family: 'True Crimes', sans-serif;
+  font-family: 'True Crimes Expanded', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 .font {
-  font-family: 'True Crimes', sans-serif;
+  font-family: 'True Crimes Expanded', sans-serif;
   font-size: 4vh  !important;
 }
 
 .font-sm {
-  font-family: 'True Crimes', sans-serif;
+  font-family: 'True Crimes Expanded', sans-serif;
   font-size: 3vh !important;
 }
 
