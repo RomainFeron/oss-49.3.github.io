@@ -72,7 +72,7 @@ function showQuestion(question) {
   for (let i = 0; i < accents.length; i++) {
     question.Citation = question.Citation.replace(accents[i], accentsOut[i]);
   }
-  questionElement.innerHTML = question.Citation
+  questionElement.innerHTML = "“" + question.Citation + "”"
 
   // Answer button for Macron
   buttonMacron.addEventListener('click', selectAnswer)
@@ -109,7 +109,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
+    startButton.innerText = 'Recommençons !'
     startButton.classList.remove('hide')
   }
 

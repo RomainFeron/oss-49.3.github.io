@@ -19,18 +19,20 @@
 
   <body>
     
-    <div id="intro-div" class="center font">
+  <div class="container">
+  <div class="row">
+    <div id="intro-div" class="center font col-xs-12 col-md-6 col-md-offset-3">
 
         <div class="main-text"><center>Startup Nation, <br> au travail!</center></div>
     
-        <div class="carousel">
-          <img src="css/img/carousel/1.jpg" class="carousel-image" style="display: block;">
-          <img src="css/img/carousel/2.jpg" class="carousel-image" style="display: none;">
-          <img src="css/img/carousel/3.jpg" class="carousel-image" style="display: none;">
-          <img src="css/img/carousel/4.jpg" class="carousel-image" style="display: none;">
-          <img src="css/img/carousel/5.jpg" class="carousel-image" style="display: none;">
-          <img src="css/img/carousel/6.jpg" class="carousel-image" style="display: none;">
-          <img src="css/img/carousel/7.jpg" class="carousel-image" style="display: none;">
+        <div class="carousel center-block">
+          <img src="css/img/carousel/1.jpg" class="carousel-image center-block" style="display: block;">
+          <img src="css/img/carousel/2.jpg" class="carousel-image center-block" style="display: none;">
+          <img src="css/img/carousel/3.jpg" class="carousel-image center-block" style="display: none;">
+          <img src="css/img/carousel/4.jpg" class="carousel-image center-block" style="display: none;">
+          <img src="css/img/carousel/5.jpg" class="carousel-image center-block" style="display: none;">
+          <img src="css/img/carousel/6.jpg" class="carousel-image center-block" style="display: none;">
+          <img src="css/img/carousel/7.jpg" class="carousel-image center-block" style="display: none;">
         </div>
     
         <script type="text/javascript" src="scripts/carousel.js"></script>
@@ -44,40 +46,40 @@
     </div>
 
 
-    <div id="main-container" class="hide center">
+    <div id="main-container" class="hide center col-xs-12 col-md-8 col-md-offset-2">
       <div id="question" class="font"></div>
-      <div id="question-container" class="container hide center clearfix">
+      <div id="question-container" class="question-container hide center-block clearfix">
         <div id="answer-buttons" class="btn-grid btn-grid-2">
-          <button class="btn oss-img" value="OSS" id="btn-oss">
+          <button class="choice oss-img img img-responsive" value="OSS" id="btn-oss">
           </button>
-          <button class="btn macron-img" value="Macron" id="btn-macron">
+          <button class="choice macron-img img img-responsive" value="Macron" id="btn-macron">
           </button>
         </div>
         <div class="center">
-          <span id="span-true" class="hide font">Vive la France!</span>
-          <span id="span-false" class="hide font">T'es mauvais Jack!</span>
+          <span id="span-true" class="hide font-sm">Vive la France!</span>
+          <span id="span-false" class="hide font-sm">T'es mauvais Jack!</span>
         </div>
   
         <div class="controls">
           <button id="next-btn" class="next-btn hide font">Suivant</button>
         </div>
 
-        <span id="points-counter" class="flush-right hide font">
-          <span id="current-questions" class="font">x</span> / 
-          <span id="total-questions" class="font" >1</span>. 
-          Points: <span id="correct-questions" class="font">0</span>
+        <span id="points-counter" class="flush-right hide font-sm">
+          <span id="current-questions">x</span> / 
+          <span id="total-questions">1</span>. 
+          Points: <span id="correct-questions">0</span>
         </span>
 
         <span class="flush-left">
-          <a href="" id="source-container" class="hide font top-align" target=”_blank”>
+          <a href="" id="source-container" class="hide font-sm top-align" target=”_blank”>
             Source
           </a>
         </span>
         
       </div>
-
     </div>
-
+  </div>
+  </div>
   </body>
 
 </html>
