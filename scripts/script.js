@@ -1,13 +1,18 @@
 const startButton = document.getElementById('btn-start')
+const restartButton = document.getElementById('btn-restart')
 const buttonMacron = document.getElementById('btn-macron')
 const buttonOSS = document.getElementById('btn-oss')
 const nextButton = document.getElementById('next-btn')
 const introDivElement = document.getElementById('intro-div')
+const outroDivElement = document.getElementById('outro-div')
+const outroAudioElement = document.getElementById('outro-audio')
 const mainContainerElement = document.getElementById('main-container')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const sourceContainer = document.getElementById('source-container')
+const outroText = document.getElementById('outro-text')
+const outroScore = document.getElementById('outro-score')
 const totalQContainer = document.getElementById('total-questions')
 const currentQContainer = document.getElementById('current-questions')
 const correctQContainer = document.getElementById('correct-questions')
@@ -18,6 +23,8 @@ var correctQuestions = 0
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
+restartButton.addEventListener('click', startGame)
+
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
@@ -26,6 +33,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   introDivElement.classList.add("hide")
+  outroDivElement.classList.add("hide")
   mainContainerElement.classList.remove("hide")
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
@@ -35,6 +43,7 @@ function startGame() {
   currentQContainer.innerText = 1
   setNextQuestion()
   pointsCounterContainer.classList.remove("hide")
+  correctQContainer.innerText = correctQuestions
 }
 
 
@@ -82,13 +91,6 @@ function selectAnswer(e) {
     setStatusClass(button, button.dataset.correct)
   })
 
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
-  } else {
-    startButton.innerText = 'Recommençons !'
-    startButton.classList.remove('hide')
-  }
-
   buttonMacron.classList.add("hide")
   buttonOSS.classList.add("hide")
   selectedButton.classList.remove("hide")
@@ -118,6 +120,24 @@ function selectAnswer(e) {
 
   selectedButton.removeEventListener('click', selectAnswer)
 
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+    mainContainerElement.classList.add('hide')
+    outroDivElement.classList.remove('hide')
+    if (correctQuestions == questions.length) {
+      outroAudioElement.classList.add('hide')
+      outroText.innerText = "Champion de la Macronie et de la blanquette"
+    } else if (correctQuestions > questions.length * (2.0/3.0)) {
+      outroAudioElement.classList.add('hide')
+      outroText.innerText = "Habile !"
+    } else {
+      outroText.innerText = "T'es mauvais Jack !"
+      outroAudioElement.play()
+      outroAudioElement.classList.add('hide')
+    }
+    outroScore.innerText = "Votre score est de " + correctQuestions + " sur " + questions.length + "."
+  }
 }
 
 

@@ -1,12 +1,12 @@
 const questions = [
     {
-      "Citation": "Tu es là, dans une cérémonie officielle, tu te comportes comme il faut […] donc tu m'appelles […] “Monsieur”. D'accord? Voilà",
+      "Citation": "Tu es là, dans une cérémonie officielle, tu te comportes comme il faut […] donc tu m'appelles […] “Monsieur”. D'accord ? Voilà",
       "Author": "EM",
       "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
     },
     {
-      "Citation": "Le jour où tu veux faire la révolution, tu apprends d'abord à avoir un diplôme et à te nourrir toi-même, d'accord? Et à ce moment-là tu iras donner des leçons aux autres.",
+      "Citation": "Le jour où tu veux faire la révolution, tu apprends d'abord à avoir un diplôme et à te nourrir toi-même, d'accord ? Et à ce moment-là tu iras donner des leçons aux autres.",
       "Author": "EM",
       "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
@@ -24,7 +24,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=hbYrU2SldeM"
     },
     {
-      "Citation": "-Je ne bois pas d'alcool.<br>Quelle drôle d'idée! Quelle religion peut être assez stupide pour priver ses fidèles d'un tel plaisir?",
+      "Citation": "-Je ne bois pas d'alcool.<br>Quelle drôle d'idée ! Quelle religion peut être assez stupide pour priver ses fidèles d'un tel plaisir ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E",
       "Video": "https://www.youtube.com/watch?v=Hkrh0tZ2a2E"
@@ -54,7 +54,7 @@ const questions = [
       "Video": ""
     },
     {
-      "Citation": "Le général de Gaulle n'a-t-il pas dit que toute la France était résistante?",
+      "Citation": "Le général de Gaulle n'a-t-il pas dit que toute la France était résistante ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
@@ -90,7 +90,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
-      "Citation": "C'est quand même bien mieux une voiture propre non?",
+      "Citation": "C'est quand même bien mieux une voiture propre non ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
@@ -114,7 +114,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
     },
     {
-      "Citation": "Attendez, attendez, c'est lesquels les Chinois qui étaient alliés aux nazis?",
+      "Citation": "Attendez, attendez, c'est lesquels les Chinois qui étaient alliés aux nazis ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
@@ -138,13 +138,13 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM&t=43s"
     },
     {
-      "Citation": "Il est complètement crétin c'gamin!",
+      "Citation": "Il est complètement crétin c'gamin !",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=VpbhmR171N0",
       "Video": "https://www.youtube.com/watch?v=VpbhmR171N0"
     },
     {
-      "Citation": "Changer le monde?! Quelle drôle d'idée! Il est très bien comme ça le monde, pourquoi le changer?",
+      "Citation": "Changer le monde ? Quelle drôle d'idée ! Il est très bien comme ça le monde, pourquoi le changer ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=3uvMwT69WsY",
       "Video": "https://www.youtube.com/watch?v=3uvMwT69WsY"
@@ -228,7 +228,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV"
     },
     {
-      "Citation": "[…] hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail]! Ils veulent simplement des gens qui sont prêts à travailler",
+      "Citation": "[…] hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail] ! Ils veulent simplement des gens qui sont prêts à travailler",
       "Author": "EM",
       "Source": "https://fr.wikipedia.org/wiki/Je_traverse_la_rue_et_je_vous_trouve_un_travail",
       "Video": ""
@@ -246,7 +246,7 @@ const questions = [
       "Video": ""
     },
     {
-      "Citation": "Je n'ai évidemment jamais dit que je me voyais comme Jupiter!",
+      "Citation": "Je n'ai évidemment jamais dit que je me voyais comme Jupiter !",
       "Author": "EM",
       "Source": "https://www.rtl.fr/actu/politique/macron-definit-l-image-du-president-jupiterien-dans-son-interview-au-point-7789901076",
       "Video": ""
@@ -270,7 +270,7 @@ const questions = [
       "Video": ""
     },
     {
-      "Citation": "On dirait une poissonnière de Ménilmontant!",
+      "Citation": "On dirait une poissonnière de Ménilmontant !",
       "Author": "OSS",
       "Source": "https://hitek.fr/actualite/top-repliques-oss-117_15313",
       "Video": ""
@@ -282,7 +282,7 @@ const questions = [
       "Video": ""
     },
     {
-      "Citation": "De toute façon, quand y en a pour un, y en a pour deux non?",
+      "Citation": "De toute façon, quand y en a pour un, y en a pour deux non ?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
@@ -294,7 +294,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
-      "Citation": "On a jamais les bons papiers. Faut toujours revenir. Quand on revient, ils sont plus là. Où ils sont? Ça j'en sais rien. Hein? A la sieste ou à la prière ou partis manger des boulettes j'en sais rien, mais, c'est pas clair.",
+      "Citation": "On a jamais les bons papiers. Faut toujours revenir. Quand on revient, ils sont plus là. Où ils sont ? Ça j'en sais rien. Hein ? A la sieste ou à la prière ou partis manger des boulettes j'en sais rien, mais, c'est pas clair.",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
