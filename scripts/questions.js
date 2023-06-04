@@ -1,12 +1,6 @@
 const questions = [
     {
-      "Citation": "Non, non, tu es là dans une cérémonie officielle. Tu te comportes comme il faut",
-      "Author": "EM",
-      "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
-      "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
-    },
-    {
-      "Citation": "Tu peux faire l'imbécile, mais aujourd'hui, c'est la 'Marseillaise' et le 'Chant des Partisans'",
+      "Citation": "Tu es là, dans une cérémonie officielle, tu te comportes comme il faut […] donc tu m'appelles […] “Monsieur”. D'accord? Voilà",
       "Author": "EM",
       "Source": "https://www.lefigaro.fr/politique/le-scan/2018/06/18/25001-20180618ARTFIG00201-tu-m-appelles-monsieur-le-president-macron-recadre-un-jeune-qui-l-appelle-manu.php",
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
@@ -18,7 +12,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=CkOOXvlUP3M"
     },
     {
-      "Citation": "c'est pas la faute de la France, pardon de le dire dans des termes aussi crus. [...] Faut pas chercher des coupables à l'extérieur.",
+      "Citation": "[…] c'est pas la faute de la France, pardon de le dire dans des termes aussi crus. […] Faut pas chercher des coupables à l'extérieur.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=hbYrU2SldeM",
       "Video": "https://www.youtube.com/watch?v=hbYrU2SldeM"
@@ -60,6 +54,12 @@ const questions = [
       "Video": ""
     },
     {
+      "Citation": "Le général de Gaulle n'a-t-il pas dit que toute la France était résistante?",
+      "Author": "OSS",
+      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
+      "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
+    },
+    {
       "Citation": "Je ne suis pas arrogant. Je dis et je fais ce que je veux.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=A2OYiyQ7eLw",
@@ -78,7 +78,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=a2LnIv8lpxM"
     },
     {
-      "Citation": "on met un pognon de dingues dans les minima sociaux, les gens ils sont quand même pauvres.",
+      "Citation": "[…] on met un pognon de dingues dans les minima sociaux, les gens ils sont quand même pauvres.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=z83hJ2LA3NI",
       "Video": "https://www.youtube.com/watch?v=z83hJ2LA3NI"
@@ -97,12 +97,6 @@ const questions = [
     },
     {
       "Citation": "Il s'agirait de grandir, il s'agirait de grandir.",
-      "Author": "OSS",
-      "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
-      "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
-    },
-    {
-      "Citation": "Le général de Gaulle n'a-t-il pas dit que toute la France était résistante?",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=v0LoF3V9_ls",
       "Video": "https://www.youtube.com/watch?v=v0LoF3V9_ls"
@@ -174,13 +168,7 @@ const questions = [
       "Video": "https://www.youtube.com/shorts/Jr4jD28TY-I"
     },
     {
-      "Citation": "Ce qui est ici possible est lié à une culture, un peuple marqué par son histoire et ce peuple luthérien qui a vécu les transformations des dernières décennies, n'est pas exactement le Gaulois réfractaire au changement",
-      "Author": "EM",
-      "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
-      "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
-    },
-    {
-      "Citation": "nous avons tous quelque chose en commun, cette part d'Européen qui nous unit.",
+      "Citation": "[…] nous avons tous quelque chose en commun, cette part d'Européen qui nous unit.",
       "Author": "EM",
       "Source": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde",
       "Video": "https://www.youtube.com/watch?v=3_6hDHIYSNg&t=4s&ab_channel=LeMonde"
@@ -240,19 +228,19 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=cdaRxwsP9-c&ab_channel=RidiculeTV"
     },
     {
-      "Citation": "hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail]! Ils veulent simplement des gens qui sont prêts à travailler",
+      "Citation": "[…] hôtels, cafés, restaurants, je traverse la rue, je vous en trouve [du travail]! Ils veulent simplement des gens qui sont prêts à travailler",
       "Author": "EM",
       "Source": "https://fr.wikipedia.org/wiki/Je_traverse_la_rue_et_je_vous_trouve_un_travail",
       "Video": ""
     },
     {
-      "Citation": "-N'êtes-vous pas le meilleur ? <br>-Je vous répondrais « oui », ce serait de la prétention ; je vous répondrais « non », ce serait de la bêtise. ",
+      "Citation": "-N'êtes-vous pas le meilleur ? <br>-Je vous répondrais «oui», ce serait de la prétention ; je vous répondrais «non», ce serait de la bêtise. ",
       "Author": "OSS",
       "Source": "https://fr.wikiquote.org/wiki/OSS_117_:_Alerte_rouge_en_Afrique_noire",
       "Video": ""
     },
     {
-      "Citation": "Pour ma part, je ne crois pas au président \"normal\". Les Français n’attendent pas cela. Au contraire, un tel concept les déstabilise, les insécurise.",
+      "Citation": "Pour ma part, je ne crois pas au président normal. Les Français n’attendent pas cela. Au contraire, un tel concept les déstabilise, les insécurise.",
       "Author": "EM",
       "Source": "https://www.challenges.fr/election-presidentielle-2017/interview-exclusive-d-emmanuel-macron-je-ne-crois-pas-au-president-normal_432886",
       "Video": ""
@@ -300,7 +288,7 @@ const questions = [
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
     },
     {
-      "Citation": "développement, modernité,… Moi je veux bien, mais enfin, si y avait pas les Occidentaux…",
+      "Citation": "[…] développement, modernité,… Moi je veux bien, mais enfin, si y avait pas les Occidentaux…",
       "Author": "OSS",
       "Source": "https://www.youtube.com/watch?v=avrmiFo2jcg",
       "Video": "https://www.youtube.com/watch?v=avrmiFo2jcg"
